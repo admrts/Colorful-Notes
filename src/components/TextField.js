@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ColorButton from "./ColorButton";
 import { useDispatch, useSelector } from "react-redux";
 import { saveNote } from "../redux/noteSlice";
+import { nanoid } from "@reduxjs/toolkit";
 
 function TextField() {
   const { color } = useSelector((store) => store.note);
@@ -12,7 +13,7 @@ function TextField() {
     setText(e.target.value);
   };
   const addClick = () => {
-    dispatch(saveNote(text));
+    dispatch(saveNote({ text, id: nanoid() }));
     setText("");
   };
   return (

@@ -7,8 +7,8 @@ function NoteList() {
   return (
     <div className="noteList">
       {filteredNotes.length > 0 ? (
-        filteredNotes.map((item, key) => {
-          return <Note item={item} key={key} />;
+        filteredNotes.map((item) => {
+          return <Note item={item} key={item.id} />;
         })
       ) : (
         <p>hello</p>

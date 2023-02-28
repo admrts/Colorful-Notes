@@ -11,8 +11,9 @@ const noteSlice = createSlice({
   initialState,
   reducers: {
     saveNote: (state, action) => {
-      const text = action.payload;
-      state.notes.push({ text: text, color: state.color });
+      const text = action.payload.text;
+      const id = action.payload.id;
+      state.notes.push({ text, id, color: state.color });
       state.filteredNotes = state.notes;
     },
     changeColor: (state, action) => {
@@ -20,6 +21,13 @@ const noteSlice = createSlice({
     },
     changeSearchText: (state, action) => {
       state.searchText = action.payload;
+    },
+    deleteNote: (state, action) => {
+      const id = action.payload;
+      state.notes = state.notes.filter((note) => {
+        return id !== note.id;
+      });
+      state.filteredNotes = state.notes;
     },
     filterNotes: (state, action) => {
       const searchText = action.payload;
@@ -34,6 +42,11 @@ const noteSlice = createSlice({
   },
 });
 
-export const { saveNote, changeColor, changeSearchText, filterNotes } =
-  noteSlice.actions;
+export const {
+  saveNote,
+  changeColor,
+  changeSearchText,
+  filterNotes,
+  deleteNote,
+} = noteSlice.actions;
 export default noteSlice.reducer;
