@@ -23,7 +23,7 @@ function TextField() {
         cols="55"
         rows="13"
         className={classes}
-        placeholder="Write text here..."
+        placeholder="Write note here..."
         value={text}
         onChange={handleChange}
       />

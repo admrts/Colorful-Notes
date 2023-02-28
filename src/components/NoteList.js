@@ -11,7 +11,7 @@ function NoteList() {
           return <Note item={item} key={item.id} />;
         })
       ) : (
-        <p>hello</p>
+        <p>Note couldn't find</p>
       )}
     </div>
   );
