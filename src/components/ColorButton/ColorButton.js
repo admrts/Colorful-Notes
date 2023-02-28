@@ -1,6 +1,7 @@
 import React from "react";
+import "./colorbutton.css";
 
-import { changeColor } from "../redux/noteSlice";
+import { changeColor } from "../../redux/noteSlice";
 import { useDispatch } from "react-redux";
 
 function ColorButton() {

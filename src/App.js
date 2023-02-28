@@ -1,7 +1,7 @@
 import "./App.css";
-import Container from "./components/Container";
-import NoteList from "./components/NoteList";
-import Searcbar from "./components/Searcbar";
+import Container from "./components/Container/Container";
+import NoteList from "./components/Notelist/NoteList";
+import Searcbar from "./components/Searchbar/Searcbar";
 
 function App() {
   return (

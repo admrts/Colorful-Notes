@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import ColorButton from "./ColorButton";
+import "./textfield.css";
+import ColorButton from "../ColorButton/ColorButton";
 import { useDispatch, useSelector } from "react-redux";
-import { saveNote } from "../redux/noteSlice";
+import { saveNote } from "../../redux/noteSlice";
 import { nanoid } from "@reduxjs/toolkit";
 
 function TextField() {

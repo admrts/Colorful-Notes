@@ -1,0 +1,38 @@
+.container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+.textFieldDiv {
+  position: relative;
+}
+.textfield {
+  resize: none;
+  box-shadow: 0 0 10px lightgray;
+  border: transparent;
+  border-radius: 8px;
+  padding: 10px;
+}
+.textfield::placeholder {
+  color: black;
+}
+.textfield:focus {
+  outline: none !important;
+
+  box-shadow: 0 0 10px #719ece;
+}
+.addButton {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 14%;
+  padding: 5px 0;
+  border-radius: 5px;
+  border: transparent;
+  color: whitesmoke;
+  background-color: #554994;
+}

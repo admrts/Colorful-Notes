@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
-import { filterNotes } from "../redux/noteSlice";
+import { filterNotes } from "../../redux/noteSlice";
+import "./searchbar.css";
 
 function Searcbar() {
   const [text, setText] = useState("");

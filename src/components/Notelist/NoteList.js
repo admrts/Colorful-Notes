@@ -1,4 +1,5 @@
-import Note from "./Note";
+import Note from "../Note/Note";
+import "./notelist.css";
 import { useSelector } from "react-redux";
 
 function NoteList() {

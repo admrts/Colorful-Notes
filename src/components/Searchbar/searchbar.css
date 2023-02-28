@@ -1,0 +1,14 @@
+.searchDiv {
+  width: 50%;
+}
+.searchBar {
+  width: 100%;
+  border: transparent;
+  box-shadow: 0 0 10px lightgray;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.searchBar:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #719ece;
+}
