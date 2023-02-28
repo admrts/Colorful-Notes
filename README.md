@@ -17,6 +17,6 @@ To Start Server:
 
 ## Demo
 
-[Click and try](https://colurfulnotes7.netlify.app)
+[Click and try](https://colorfulnotes7.netlify.app)
 
 ![](demo.gif)
