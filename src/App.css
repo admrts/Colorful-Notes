@@ -5,79 +5,7 @@
   justify-content: center;
   align-items: center;
 }
-.searchDiv {
-  width: 50%;
-}
-.searchBar {
-  width: 100%;
-  border: transparent;
-  box-shadow: 0 0 10px lightgray;
-  padding: 15px 10px;
-  border-radius: 5px;
-}
-.searchBar:focus {
-  outline: none !important;
-  box-shadow: 0 0 10px #719ece;
-}
 
-.container {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 30px;
-}
-.textFieldDiv {
-  position: relative;
-}
-.textfield {
-  resize: none;
-  box-shadow: 0 0 10px lightgray;
-  border: transparent;
-  border-radius: 8px;
-  padding: 10px;
-}
-.textfield::placeholder {
-  color: black;
-}
-.textfield:focus {
-  outline: none !important;
-
-  box-shadow: 0 0 10px #719ece;
-}
-.addButton {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 14%;
-  padding: 5px 0;
-  border-radius: 5px;
-  border: transparent;
-  color: whitesmoke;
-  background-color: #554994;
-}
-.colorButtons {
-  display: flex;
-  gap: 5px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-}
-
-.btn {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: transparent;
-  border: 1px solid rgb(53, 53, 53);
-}
-
-.btn:hover {
-  border: 1px solid;
-  box-shadow: 0 0 5px black;
-}
 .red {
   background-color: #a7727d;
 }
@@ -92,42 +20,4 @@
 }
 .yellow {
   background-color: #e5fdd1;
-}
-
-.note {
-  width: 200px;
-  height: 100px;
-  border-radius: 5px;
-  resize: none;
-  padding: 5px 5px;
-  color: black;
-  border: transparent;
-  box-shadow: 0 0 10px lightgray;
-  font-size: 15px;
-}
-.noteDiv {
-  position: relative;
-}
-.deleteBtn {
-  position: absolute;
-  top: -10px;
-  right: -3px;
-  color: white;
-  padding: 3px 5px;
-  border-radius: 30%;
-  border: transparent;
-  background-color: #eb455f;
-}
-.deleteBtn:hover {
-  box-shadow: 0 0 5px maroon;
-  cursor: pointer;
-}
-
-.noteList {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
